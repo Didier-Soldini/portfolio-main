@@ -1,0 +1,26 @@
+.contactR{
+    @include flex-center;
+    background-color: $color-font-2;
+    padding: 80px;
+    gap: 50px;
+    font-size: 50px;
+    a{
+        transition: transform 0.4s ease;
+        color: $color-font;
+        width: 80px;
+        height: 80px;
+        padding: 5px;
+        border-radius: 50%;
+        border: 1px solid;
+        @include flex-center;
+        
+        &:hover{
+            color: $color-title;
+            transform: scale(1.2);
+            path{
+                color: $color-title;
+            }
+        }
+       
+    }
+}

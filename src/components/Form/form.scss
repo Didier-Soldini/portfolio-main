@@ -1,0 +1,126 @@
+.formulaire{
+    color: $color-font;
+}
+.form {
+    resize: none;
+    margin: 80px 0 80px;
+    color: $color-font;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+    &__row {
+        padding: 15px;
+         @include custom-box-shadow;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    
+    &__element {
+        width: 90%;
+        flex: 1;
+        @include flex-column;
+        align-items: center;
+    }
+    
+    &__element--half-width {
+        flex: 1 0 calc(50% - 0.5rem);
+    }
+  
+    &__field {
+        margin-bottom: 1rem;
+        position: relative;
+    }
+    
+    &__label {
+        color: $color-font-2;
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    
+    &__input,
+    &__textarea {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 0.5rem;
+        width: 300px;
+        font-size: 1rem;
+        box-sizing: border-box;
+        color: $skills-color;
+    }
+  
+    &__textarea {
+        height: 270px;
+        resize: none;
+    }
+  
+    &__error {
+        display: block;
+        color: red;
+        font-size: 0.8rem;
+        margin-top: 0.25rem;
+        bottom: 100%;
+        left: 0;
+        width: 100%;
+        height: 1.5rem;
+    }
+
+    &__submit {
+        margin: auto;
+        border-radius: 10px;
+        width: 300px; 
+        @include gradient-bg-titles;
+        box-shadow: rgba(236, 58, 27, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        transition: 400ms;
+        color: #fff;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+      
+        &:hover {
+          background-color: darken($color: $color-icons, $amount: 10);
+        }
+      }
+  }
+  .modalForm{
+    position: fixed;
+    top: 40%;
+    left: 25%;
+    width: 50%;
+    height: 14%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(71, 123, 133, 0.85);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 10px 13px -7px #000000;
+    p{
+        margin-bottom: 0;
+        padding: auto;
+    }
+    &__close{
+       position: absolute;
+        top: 5px;
+        right: 5px;
+        background: #ff0000;
+        border: 1px #fff solid;
+        box-shadow: 0px 10px 13px -7px #000000
+        ;
+        
+        cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 660px) {
+    .form{
+      flex-direction: column;
+    }
+    .modalForm{
+        width: 90%;
+        left: 5%;
+    }
+  }  

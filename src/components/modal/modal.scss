@@ -1,0 +1,143 @@
+a{
+    text-decoration: none;
+}
+.modal-backdrop.show{
+    overflow-y: scroll;
+
+}
+.modal-content{
+    background-color: #62778af3;
+    color: $color-font;
+    border: 3px solid $color-font;
+}
+.modal-header > button{
+    opacity: 1;
+    
+}
+.modal-title{
+    margin-left: auto;
+}
+.ImgModal{
+    @include flex-center;
+    img{
+        border: 3px solid $color-font;
+        object-fit:cover;
+        width: 90%;
+        height: 250px;
+        border-radius: 15px;
+        box-shadow: 2px 5px 10px rgba(18, 17, 17, 0.555);
+    }
+}
+.containerModal{
+    display: flex;
+    h3{
+        box-shadow: 0px 0px 20px rgba(18, 17, 17, 0.8);
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        @include gradient-bg-titles;
+        @include text-shadow-black;
+    }
+    &__target,
+    &__skills{
+        margin-top: 15px;
+        width: 50%;
+        padding: 10px;
+        @include flex-column;
+        flex-wrap: wrap;
+        align-items: center;
+        &--title{
+            border-right: 1px solid $color-font;
+        }
+        &--paragraph{
+            padding: 10px;
+            text-align: justify;
+        }
+        &--techno{
+            text-align: center;
+            word-spacing: 1.5rem;
+        }
+        &--logo{
+            margin: 10px;
+            padding: 5px;
+            border-radius: 20px;
+            object-fit: contain;
+            width: 100px;
+            height: 60px;
+            color: aliceblue;
+        }
+    }
+    
+}
+.modal-footer{
+
+    margin: 10px;
+    display: inline;
+    text-align: center;
+   
+    h3{
+        white-space: nowrap;
+        margin: 0 auto;
+        padding: 5px;
+        border-radius: 5px;
+        @include text-shadow-black;
+        @include gradient-bg-titles;
+        width: fit-content;
+        box-shadow: 0px 0px 20px rgba(18, 17, 17, 0.8);
+    }
+    .containerModal__links{
+        @include flex-center;
+        gap: 40px;
+        margin-top: 30px;
+        h4{
+            font-size: 1.5rem;
+            color: $color-font;
+            text-decoration: underline;
+            
+            &:hover, :visited{
+                color: #b7a8e6;
+            }
+        }
+        &--logo{
+            width: 60px;
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .ImgModal{
+        img{
+            height: 150px;
+        }
+    }
+    .containerModal{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        h3{
+            width: fit-content;
+        }
+        &__target,
+        &__skills{
+            width: 100%;
+            display: flex;
+            padding: 0;
+            &--title{
+                border: 0;
+            }
+            &--center{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                text-align: justify;
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .ImgModal{
+        img{
+            height: 100px ;
+        }
+    }
+}

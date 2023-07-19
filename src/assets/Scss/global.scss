@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+   
+    
+}
+body{
+    background: no-repeat  url('../images/bg.webp');
+    background-size: cover;
+    overflow-x: hidden;
+    z-index: 5;
+}
+
+@media screen and (max-width: 930px) {
+    body{
+      display: flex !important;
+      flex-direction: column !important;
+      width: 100%;
+    }
+}  

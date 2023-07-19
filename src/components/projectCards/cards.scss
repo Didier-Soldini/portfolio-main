@@ -1,0 +1,105 @@
+@import "~bootstrap/scss/bootstrap";
+
+  
+.project {
+    padding-top: 0;
+    object-fit: cover;
+}
+.container{
+  margin-bottom: 50px;
+  &__project {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 20px;
+    width: 100%;
+    margin-top: 50px;
+
+    .figure{
+      margin-top: 25px;
+      width: 100%;
+    }
+  }
+}      
+      .btn-primary{
+        // --bs-btn-color: none;
+        // color: $color-font;
+        &:active{
+          background: rgba(white, 0.15);
+          --bs-btn-active-border-color: rgba(white, 0.15);
+          --bs-btn-active-bg:rgba(white, 0.15);
+        }
+      }
+      .card {
+        background-color:rgba(171, 207, 224, 0.466);
+        position: relative;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+        border-radius: 5px;
+        padding: 0;
+        transition: 400ms;
+        cursor: pointer;
+        transition: transform 400ms;
+        h3{
+          margin: 0 auto;
+          word-spacing: 0.5rem;
+          font-size: 1.7rem;
+          @include text-shadow-black;
+        }
+        
+        &:hover , &:active{
+          border: $color-icons 1px solid;
+          @include box-shadow-cards;
+          background-color:rgba(171, 207, 224, 0.466);
+          transition-duration: 600ms ;
+          transform: scale(1.03)
+        }
+ 
+        &__image {
+          width: 100%;
+          height: 130px;
+          object-fit: cover;
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .project{
+          margin-top: 50px;
+          .container__project{
+          grid-template-columns: repeat(2, 1fr);
+  
+          }}
+      }
+      @media screen and (max-width: 930px) {
+        .project{
+        margin-top: 50px;
+        .container__project{
+        grid-template-columns: repeat(2, 2fr);
+
+        }
+        h3{
+          word-spacing: 0.5rem;
+        }
+        .card{
+          width: 100%;
+          &__image {
+            width: 100%;
+            height: 150px;
+            object-fit: fill;
+          }
+        }
+        h2{
+          text-align: center;
+        }
+        }
+      } 
+      @media screen and (max-width: 768px) {
+        .container__project{
+          display: block;
+          }
+
+      }
+
+      
+      
+      
+      
+      
+      
