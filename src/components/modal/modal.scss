@@ -107,6 +107,7 @@ a{
 @media screen and (max-width: 1000px) {
     .ImgModal{
         img{
+            object-fit:fill;
             height: 150px;
         }
     }
