@@ -1,8 +1,8 @@
 .contactR{
     @include flex-center;
     background-color: $color-font-2;
-    padding: 80px;
-    gap: 50px;
+    padding: 80px 30px 80px 30px;
+    gap: 20px;
     font-size: 50px;
     a{
         transition: transform 0.4s ease;
