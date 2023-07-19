@@ -137,10 +137,11 @@ function Form() {
                     
                     <div className="form__field">
                         <label htmlFor="text" className="form__label">Message:</label>
-                        <textarea 
+                        <textarea
+                          id="message"
+                          type="text" 
                           name="message" 
                           className="form__textarea" 
-                          id="message"
                           onChange={handleOnChange}
                           required
                           value={inputs.message}
