@@ -10,7 +10,7 @@ class Discribe extends Component {
         return (
             <div>
                 <Typical
-                steps={['Un graphiste',1000, 'qui fait impression !', 3000 , 'Et aussi du web !!!', 5000]}
+                steps={['Un graphiste',500, 'qui fait impression !', 2000 , 'Et aussi du web !!!', 5000]}
                 loop={Infinity}
                 wrapper="b"
             />
