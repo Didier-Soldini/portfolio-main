@@ -120,10 +120,10 @@
        
       },
       "logo":{
-        "padlet": "./images/Logos/PadletLogo.webp",
-        "trello":"./images/Logos/trellologo.webp", 
-        "powerpoint":"./images/Logos/PowerPoint.webp", 
-        "scrum":"./images/Logos/scrum-project.webp" 
+        "scoop-it": "./images/Logos/Scoop-it.webp",
+        "notion":"./images/Logos/Notion-logo.webp", 
+        "powerpoint":"./images/Logos/PowerPoint.webp"
+         
       }
         
     },
