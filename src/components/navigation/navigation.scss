@@ -60,7 +60,7 @@ $header-height: 80px;
       background-color: rgba(255, 255, 255, 0.2);
       color: $color-title;
       opacity: 1;
-      // background: linear-gradient(to top right,$color-icons ,$color-icons, lighten( $color: $color-icons, $amount: 25));
+      
 
 
     }
@@ -104,8 +104,7 @@ $header-height: 80px;
     
     &-link {
       font-size: 1.3rem;
-      // border-bottom: 3px solid white;
-
+      
     }
     hr{
       color: #fff;

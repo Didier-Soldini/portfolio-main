@@ -89,32 +89,24 @@ const ModalP = (props) => {
                   </div>
                 )}
 
-                {card.links.trello && (
+                {card.links.scoopit && (
                   <div>
-                    <Link to={card.links.trello} target="_blank" rel="noopener noreferrer">
-                      <h4>Trello</h4>
-                      <img className='containerModal__links--logo' title='Trello' src={card.links.logoTrello} alt='Pages' />
+                    <Link to={card.links.scoopit} target="_blank" rel="noopener noreferrer">
+                      <h4>Scoop-it</h4>
+                      <img className='containerModal__links--logo' title='scoop-it' src={card.links.logoScoopit} alt='Pages' />
                     </Link>
                   </div>
                 )}
 
-                {card.links.padlet && (
+                {card.links.notion && (
                   <div>
-                    <Link to={card.links.padlet} target="_blank" rel="noopener noreferrer">
-                      <h4>Padlet</h4>
-                      <img className='containerModal__links--logo' title='Padlet' src={card.links.logoPadlet} alt='Pages' />
+                    <Link to={card.links.notion} target="_blank" rel="noopener noreferrer">
+                      <h4>Notion</h4>
+                      <img className='containerModal__links--logo' title='notion' src={card.links.logoNotion} alt='Pages' />
                     </Link>
                   </div>
                 )}
 
-                {card.links.oneDrive && (
-                  <div>
-                    <Link to={card.links.oneDrive} target="_blank" rel="noopener noreferrer">
-                      <h4>OneDrive</h4>
-                      <img className='containerModal__links--logo' title='OneDrive' src={card.links.logoOneDrive} alt='Pages' />
-                    </Link>
-                  </div>
-                )}
               </>
             )}
       </div>

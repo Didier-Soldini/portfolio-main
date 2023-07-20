@@ -113,14 +113,14 @@
       "paragraph": "À partir d'user stories, réalisation d'un système de veille, d'un fichier des spécifications et solutions techniques, et organisation des différentes parties du développement.",
       "techno":"NOTION SCOOP-IT POWERPOINT AGILE",
       "links":{
-          "scoop-it":"https://www.scoop.it/topic/menu-maker",
-        "logoScoop-it":"./images/Logos/onedrive.webp",
+          "scoopit":"https://www.scoop.it/topic/menu-maker",
+        "logoScoopit":"./images/Logos/Scoop-it.webp",
         "notion":"https://peach-ant-1ae.notion.site/Kanban-Menu-Maker-by-Qwenta-ab5d50f8715245949ea1a11a243bd3e3",
-        "logoNotion":"./images/Logos/PadletLogo.webp"
+        "logoNotion":"./images/Logos/Notion-logo.webp"
        
       },
       "logo":{
-        "scoop-it": "./images/Logos/Scoop-it.webp",
+        "scoopit": "./images/Logos/Scoop-it.webp",
         "notion":"./images/Logos/Notion-logo.webp", 
         "powerpoint":"./images/Logos/PowerPoint.webp"
          
