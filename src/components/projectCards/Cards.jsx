@@ -38,8 +38,9 @@ const Cards = () => {
   }
  
   return (
-    <section className='project'>
+    <>
       <SectionTitle id="project" />
+        <section className='project'>
       <div className='container'>
         
           <article className='container__project'>
@@ -71,6 +72,7 @@ const Cards = () => {
         
       </div>
     </section>
+  </>  
   );
 };
 

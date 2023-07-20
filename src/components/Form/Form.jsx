@@ -81,8 +81,9 @@ function Form() {
     }, [status.submitted]);
 
   return (
-    <section className="formulaire">
-        <SectionTitle id="contact"/>
+    <>
+      <SectionTitle id="contact" />
+        <section className="formulaire">
         <form  onSubmit={handleSubmit} className="form" >
             <div className="form__row">
                
@@ -172,6 +173,7 @@ function Form() {
 
         </form>
     </section>
+  </>  
   );
 }
 

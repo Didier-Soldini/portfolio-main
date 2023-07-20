@@ -2,7 +2,7 @@ import React from 'react';
 import portrait from '../../assets/images/portrait.webp';
 import SectionTitle from '../sectionTitle/SectionTitle';
 import { FaRegFilePdf } from 'react-icons/fa';
-import Header from '../Discribe/Discribe';
+import Discribe from '../Discribe/Discribe';
 import pdf from '../../assets/images/CV-Didier-Soldini.pdf';
 
 
@@ -24,7 +24,7 @@ const About = () => {
             <img src={portrait} alt="portrait" title='Didier S.' />
         </div>
           <h2 className="about-me__discribe">
-            <Header/>
+            <Discribe />
         </h2>
       </div>
     
