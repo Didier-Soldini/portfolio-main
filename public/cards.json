@@ -145,7 +145,7 @@
         "html":"./images/Logos/HTML.webp",
         "lighthouse": "./images/Logos/Lighthouse.webp",
         "schema":"./images/Logos/Schema.org.webp", 
-        "wave":"./images/Logos/wavelogo.svg",
+        "wave":"./images/Logos/wavelogo.webp",
         "squoosh":"./images/Logos/squoosh.svg"
       }
     },
