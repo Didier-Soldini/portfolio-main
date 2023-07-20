@@ -1,32 +1,37 @@
 .error{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    color: white;
+    color: $color-font-2;
     width: max-content;
-    margin: 180px auto;
+    margin: 270px auto;
     padding: 20px;
     @include custom-box-shadow;
     &__title{
-        text-shadow: 0 0 5px #ffffff, 0 0 20px #6eabdd, 0 0 30px #310eb1;
-        font-size: 5rem;
+        font-size: 6rem;
         margin-bottom: 40px;
         &--msg{
+            font-size: 1.5rem;
             margin-bottom: 50px;
-            text-shadow: 0 0 1px #ffffff, 0 0 8px #6eabdd, 0 0 10px #310eb1;
         }
     }
     &__redirect{
         margin-top: 50px;
         text-decoration: underline;
         font-size: 1.2rem;
+
+}
+
+ @media screen and (max-width: 1000px) {
+  width: 345px;
+  &__title{
+        font-size: 3.1rem;
+        margin-bottom: 40px;
+        &--msg{
+            font-size: 0.9rem;
+            margin-bottom: 50px;
+        }
     }
-    &__shadok{
-        font-size: 0.7rem;
-    }
-    img{
-        width: 200px;
-        height: 200px;
-    }
+}
 }
