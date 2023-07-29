@@ -72,7 +72,9 @@
       "techno":"HTML SASS REACT",
       "links":{
         "github":"https://github.com/Didier-Soldini/kaza",
-        "logoGithub":"./images/Logos/Github.webp"
+        "logoGithub":"./images/Logos/Github.webp",
+          "netlify":"https://kaza-immo.netlify.app/",
+        "logoNetlify":"./images/Logos/netlify-logo.png"
       },
       "logo":{
         "html": "./images/Logos/HTML.webp",

@@ -89,6 +89,15 @@ const ModalP = (props) => {
                   </div>
                 )}
 
+                {card.links.netlify && (
+                  <div>
+                    <Link to={card.links.netlify} target="_blank" rel="noopener noreferrer">
+                      <h4>Netlify Pages</h4>
+                      <img className='containerModal__links--logo' title='Netlify Pages' src={card.links.logoNetlify} alt='Pages' />
+                    </Link>
+                  </div>
+                )}
+
                 {card.links.scoopit && (
                   <div>
                     <Link to={card.links.scoopit} target="_blank" rel="noopener noreferrer">
